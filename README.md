@@ -1,27 +1,26 @@
 # 分类待看库
 
-这是小红书记录整理后的私人存档，仓库为私有仓库，只有已授权的 GitHub 账号可以读取。
+小红书收藏整理后的可浏览网站，每条内容保留原标题和原始链接。
 
-## 本机使用
+## 直接打开
 
-直接打开 `index.html` 即可浏览分类、标题、原链接和推荐顺序。
+[打开分类待看库](https://aiiiii0926.github.io/xiaohongshu-archive/)
 
-## 在另一台设备上使用
+任何设备直接点击上面的链接即可浏览，不需要安装或下载文件。
 
-1. 在这台设备安装 Git，并在 GitHub 登录同一个账号。
-2. 克隆仓库：
+## 在其他设备上使用
 
-   ```bash
-   git clone https://github.com/Aiiiii0926/xiaohongshu-archive.git
-   ```
+打开 [仓库首页](https://github.com/Aiiiii0926/xiaohongshu-archive) 后：
 
-3. 进入目录并打开 `index.html`。
+1. 点击右侧 About 区域的 **分类待看库** 网站链接。
+2. 或者直接保存网站地址：`https://aiiiii0926.github.io/xiaohongshu-archive/`。
+3. 也可以克隆仓库后，在本地打开 `index.html`。
 
-也可以直接在 GitHub 私有仓库页面下载仓库为 ZIP，解压后打开 `index.html`。
+## 通过 Agent 更新
 
-## 更新内容
+Agent 修改仓库中的 `index.html` 或 `source-data.csv` 并推送到 `main` 后，GitHub Pages 会自动重新构建网站。其他设备刷新线上地址即可看到最新版本。
 
-每次修改 `index.html`、`source-data.csv` 或其他文件后：
+本地手动更新命令：
 
 ```bash
 git add .
@@ -29,8 +28,6 @@ git commit -m "更新收藏库"
 git push
 ```
 
-然后在其他设备上执行 `git pull` 拉取最新内容。
-
 ## 阅读状态
 
-「已看」和「稍后」状态保存在浏览器本地，不会自动同步。跨设备时需要先在当前浏览器的开发者工具中导出对应 `localStorage`，再在新设备导入。
+「已看」和「稍后」状态保存在浏览器本地，不会自动跨设备同步。GitHub 同步的是网站内容、分类、标题和原始链接。
